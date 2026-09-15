@@ -7,17 +7,18 @@
     name="description"
     content="Learn about Uchindami Mkandawire, a Computer Engineering student interested in web development, embedded systems, artificial intelligence and data science."
   >
+  <link rel="stylesheet" href="styles.css">
   <title>About | Uchindami Mkandawire</title>
 </head>
 
 <body>
-  <header>
-    <a href="home.html" aria-label="Uchindami Mkandawire home">
+  <header class="site-header">
+    <a class="site-logo" href="home.html" aria-label="Uchindami Mkandawire home">
       Uchindami
     </a>
 
-    <nav aria-label="Primary navigation">
-      <ul>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -26,11 +27,11 @@
       </ul>
     </nav>
 
-    <a href="cv.pdf" download>Download CV</a>
+    <a class="button primary-button" href="cv.pdf" download>Download CV</a>
   </header>
 
   <main>
-    <section aria-labelledby="about-heading">
+    <section class="about-hero" aria-labelledby="about-heading">
       <p>About me</p>
       <h1 id="about-heading">Engineering with purpose.</h1>
 
@@ -56,7 +57,7 @@
       <p>Based in Malawi and open to internships and remote opportunities.</p>
     </section>
 
-    <section aria-labelledby="approach-heading">
+    <section class="approach-section" aria-labelledby="approach-heading">
       <p>How I work</p>
       <h2 id="approach-heading">My engineering approach</h2>
 
@@ -85,11 +86,11 @@
       </article>
     </section>
 
-    <section aria-labelledby="skills-heading">
+    <section class="tools-section" aria-labelledby="skills-heading">
       <p>Skills and tools</p>
       <h2 id="skills-heading">Technologies I work with</h2>
 
-      <ul>
+      <ul class="tools-grid">
         <li>
           <h3>HTML and CSS</h3>
           <p>Building semantic, accessible and responsive interfaces.</p>
@@ -122,24 +123,24 @@
       </ul>
     </section>
 
-    <section aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Let</CONTENT>
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Let’s work together.</h2>
       <p>
         I am interested in internships, graduate opportunities and
         collaborative engineering projects.
       </p>
-      <a href="contact.html">Contact me</a>
+      <a class="button primary-button" href="contact.html">Contact me</a>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>
       <strong>Uchindami Mkandawire</strong><br>
       Computer Engineering portfolio
     </p>
 
     <nav aria-label="Footer navigation">
-      <ul>
+      <ul class="footer-links">
         <li><a href="mailto:uchixy2005@gmail.com">Email</a></li>
         <li><a href="YOUR_LINKEDIN_URL">LinkedIn</a></li>
         <li><a href="https://github.com/Jeshurun-coder">GitHub</a></li>
