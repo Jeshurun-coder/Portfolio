@@ -315,6 +315,47 @@ main section > p:first-child,
   font-size: 12px;
 }
 
+/* About page */
+
+.approach-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.approach-section > p,
+.approach-section > h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.approach-section article,
+.tools-grid li {
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.approach-section article p,
+.tools-grid li p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tools-section + .contact-section {
+  background: #edf1f4;
+}
+
 /* Tablet and mobile */
 
 @media (max-width: 850px) {
@@ -335,6 +376,11 @@ main section > p:first-child,
   .article-section,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .approach-section,
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-section > p:first-child {
@@ -375,6 +421,11 @@ main section > p:first-child,
 
   .skills-grid,
   .projects-section {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-section,
+  .tools-grid {
     grid-template-columns: 1fr;
   }
 
