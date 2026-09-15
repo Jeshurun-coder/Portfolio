@@ -7,6 +7,7 @@
     name="description"
     content="Portfolio of Uchindami Mkandawire, a Computer Engineering student building practical web, embedded, and data-driven systems."
   >
+  <link rel="stylesheet" href="styles.css">
   <title>Uchindami Mkandawire | Computer Engineering Portfolio</title>
 </head>
 
@@ -26,33 +27,35 @@
       </ul>
     </nav>
 
-    <a class="button primary-button" href="cv.pdf" download>Download CV</a>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="hero-heading">
-      <p>Computer engineer · Web · AI · Data</p>
+      <div class="hero-content">
+        <p>Computer engineer · Web · AI · Data</p>
 
-      <h1 id="hero-heading">
-        I build practical systems that connect hardware, software and data.
-      </h1>
+        <h1 id="hero-heading">
+          I build practical systems that connect hardware, software and data.
+        </h1>
 
-      <p>
-        Final-year Computer Engineering student exploring web development,
-        embedded systems, artificial intelligence and data science through
-        practical projects.
-      </p>
+        <p>
+          Final-year Computer Engineering student exploring web development,
+          embedded systems, artificial intelligence and data science through
+          practical projects.
+        </p>
 
-      <a class="button primary-button" href="projects.html">View projects</a>
-        I build practical systems that connect hardware, software and data.
-      <a class="button secondary-button" href="contact.html">Contact me</a>
+        <div class="hero-actions">
+          <a class="button primary-button" href="projects.html">View projects</a>
+          <a class="button secondary-button" href="cv.pdf" download>Download CV</a>
+        </div>
+      </div>
 
-      <!-- Add your portrait or hero image when the final asset is ready. -->
+      <!-- Replace this placeholder when the final portrait is ready. -->
+      <div class="hero-visual" aria-hidden="true">Professional portrait</div>
     </section>
 
-    <section class="skills-section" aria-labelledby="skills-heading">
+    <section class="skills-section" aria-label="Skills and services">
       <p>Skills and services</p>
-      <h2 id="skills-heading">A practical engineering toolkit</h2>
 
       <ul class="skills-grid">
         <li>
@@ -77,6 +80,7 @@
       <h2 id="projects-heading">Engineering projects with real constraints</h2>
 
       <article class="project-card">
+        <div class="project-visual teal-visual" aria-hidden="true">Project visual</div>
         <h3>GRIFFIN</h3>
         <p>IoT · Web · Data</p>
         <p>
@@ -86,6 +90,7 @@
       </article>
 
       <article class="project-card">
+        <div class="project-visual peach-visual" aria-hidden="true">Project visual</div>
         <h3>Smart Irrigation</h3>
         <p>Automation · Sensors</p>
         <p>
@@ -95,6 +100,7 @@
       </article>
 
       <article class="project-card">
+        <div class="project-visual teal-visual" aria-hidden="true">Project visual</div>
         <h3>Server Room Monitor</h3>
         <p>Monitoring · Sensor networks</p>
         <p>
@@ -123,13 +129,10 @@
     </section>
 
     <section class="contact-section" aria-labelledby="contact-heading">
-      <p>Available for internships and collaboration</p>
+      <p>Available for opportunities</p>
       <h2 id="contact-heading">Let’s build something useful.</h2>
-      <p>
-        Have a project, opportunity or technical problem you would like to
-        discuss?
-      </p>
-      <a class="button primary-button" href="contact.html">Start a conversation</a>
+      <p>Internships, graduate roles and thoughtful collaborations.</p>
+      <a class="button secondary-button" href="contact.html">Contact me</a>
     </section>
   </main>
 
