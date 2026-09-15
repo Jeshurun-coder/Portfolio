@@ -317,40 +317,6 @@ main section > p:first-child,
 
 /* About page */
 
-.about-hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 16px 60px;
-  align-items: start;
-}
-
-.about-hero > * {
-  grid-column: 1;
-}
-
-.about-hero h1 {
-  max-width: 600px;
-  margin-bottom: 16px;
-  font-size: 52px;
-}
-
-.about-hero > p:not(:first-child) {
-  margin-bottom: 0;
-}
-
-.about-hero::after {
-  content: "Portrait / working photo";
-  display: grid;
-  grid-column: 2;
-  grid-row: 1 / span 6;
-  min-height: 350px;
-  place-items: center;
-  background: #edf1f4;
-  color: var(--text);
-  border-radius: 4px;
-  font-size: 13px;
-}
-
 .approach-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -412,16 +378,6 @@ main section > p:first-child,
     grid-template-columns: 1fr;
   }
 
-  .about-hero {
-    grid-template-columns: 1fr;
-  }
-
-  .about-hero::after {
-    grid-column: 1;
-    grid-row: 3;
-    min-height: 280px;
-  }
-
   .approach-section,
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -468,17 +424,9 @@ main section > p:first-child,
     grid-template-columns: 1fr;
   }
 
-  .about-hero h1 {
-    font-size: 36px;
-  }
-
   .approach-section,
   .tools-grid {
     grid-template-columns: 1fr;
-  }
-
-  .about-hero::after {
-    min-height: 240px;
   }
 
   .article-section,
