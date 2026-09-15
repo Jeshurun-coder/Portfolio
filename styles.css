@@ -317,6 +317,13 @@ main section > p:first-child,
 
 /* About page */
 
+.about-portrait {
+  min-height: 0;
+  aspect-ratio: 1;
+  background: #edf1f4;
+  border: 1px solid #dce3e9;
+}
+
 .approach-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
